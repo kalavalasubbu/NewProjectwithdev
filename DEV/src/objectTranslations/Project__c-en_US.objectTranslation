@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Project</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Project</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billable --></label>
+        <name>Billable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing frequency --></label>
+        <name>Billing_frequency__c</name>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>bi-weekly</masterLabel>
+            <translation><!-- bi-weekly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>weekly</masterLabel>
+            <translation><!-- weekly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>yearly</masterLabel>
+            <translation><!-- yearly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billing type --></label>
+        <name>Billing_type__c</name>
+        <picklistValues>
+            <masterLabel>Fixed fee</masterLabel>
+            <translation><!-- Fixed fee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>daily rate</masterLabel>
+            <translation><!-- daily rate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>time &amp; materials</masterLabel>
+            <translation><!-- time &amp; materials --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Client account --></label>
+        <name>Client_account__c</name>
+        <relationshipLabel><!-- Project --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Client email address --></label>
+        <name>Client_email_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Project --></label>
+        <name>Parent_Project__c</name>
+        <relationshipLabel><!-- Project --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project id --></label>
+        <name>Project_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project manager --></label>
+        <name>Project_manager__c</name>
+        <relationshipLabel><!-- Project --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project type --></label>
+        <name>Project_type__c</name>
+        <picklistValues>
+            <masterLabel>Client Billable</masterLabel>
+            <translation><!-- Client Billable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Un-Billable</masterLabel>
+            <translation><!-- Client Un-Billable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Revenue amount --></label>
+        <name>Revenue_amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>Stage__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Started</masterLabel>
+            <translation><!-- Started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>closed</masterLabel>
+            <translation><!-- closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>deffered</masterLabel>
+            <translation><!-- deffered --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Start date --></label>
+        <name>Start_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time approval method --></label>
+        <name>Time_approval_method__c</name>
+        <picklistValues>
+            <masterLabel>Auto Approve</masterLabel>
+            <translation><!-- Auto Approve --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Manager</masterLabel>
+            <translation><!-- Project Manager --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- country --></label>
+        <name>country__c</name>
+        <picklistValues>
+            <masterLabel>India</masterLabel>
+            <translation><!-- India --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japan</masterLabel>
+            <translation><!-- Japan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UK</masterLabel>
+            <translation><!-- UK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US</masterLabel>
+            <translation><!-- US --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- end date --></label>
+        <name>end_date__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

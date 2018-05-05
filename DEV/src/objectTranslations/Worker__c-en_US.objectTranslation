@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Worker</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Worker</value>
+    </caseValues>
+    <fields>
+        <label><!-- City/town --></label>
+        <name>City_town__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation><!-- F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M</masterLabel>
+            <translation><!-- M --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>other</masterLabel>
+            <translation><!-- other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Hire date --></label>
+        <name>Hire_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hire reson --></label>
+        <name>Hire_reson__c</name>
+    </fields>
+    <fields>
+        <label><!-- Leave date --></label>
+        <name>Leave_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Role --></label>
+        <name>Resource_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start date --></label>
+        <name>Start_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street address --></label>
+        <name>Street_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- User ID --></label>
+        <name>User_ID__c</name>
+        <relationshipLabel><!-- Worker --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Worker ID --></label>
+        <name>Worker_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Worker type --></label>
+        <name>Worker_type__c</name>
+        <picklistValues>
+            <masterLabel>Contract</masterLabel>
+            <translation><!-- Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Permanent</masterLabel>
+            <translation><!-- Permanent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- candidate --></label>
+        <name>candidate__c</name>
+        <relationshipLabel><!-- Worker --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- country --></label>
+        <name>country__c</name>
+        <picklistValues>
+            <masterLabel>India</masterLabel>
+            <translation><!-- India --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japan</masterLabel>
+            <translation><!-- Japan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UK</masterLabel>
+            <translation><!-- UK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US</masterLabel>
+            <translation><!-- US --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- last Name --></label>
+        <name>last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- manager --></label>
+        <name>manager__c</name>
+        <relationshipLabel><!-- Worker --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- phone --></label>
+        <name>phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- postal/zip code --></label>
+        <name>postal_zip_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- state --></label>
+        <name>state__c</name>
+    </fields>
+    <fields>
+        <label><!-- worker status --></label>
+        <name>worker_status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminated</masterLabel>
+            <translation><!-- Terminated --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

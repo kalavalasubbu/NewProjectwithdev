@@ -1,0 +1,31 @@
+<apex:page standardController="Document_Folder__c" extensions="DocUploadinsert">
+    <style>
+.custom1 {
+    background-color: GhostWhite  !important;
+}
+        
+.custom1 .pbSubheader {
+    background-color: green !important;
+}
+
+    </style>   
+    
+    <apex:form id="from" >
+    <apex:pageMessages id="errormesasges"/>
+    
+    <apex:pageBlock title="Document Folder Detail" mode="detail" id="pb">
+            <apex:pageBlockButtons >
+                        <apex:commandButton action="{!Save}" value="Next" />
+                        <apex:commandButton action="{!Cancel}" value="Cancel"/>
+            </apex:pageBlockButtons>
+    <apex:outputPanel layout="block" styleClass="custom1" id="grc">
+         <apex:pageBlockSection id="GreenSection" title="Document Information" columns="1" >
+      <apex:inputField value="{!ssa.Name}" style="width:700px; height: 16px" />      
+       <apex:inputField value="{!ssa.Description__c}"  style="width:700px; height: 54px" />
+        </apex:pageBlockSection>
+    </apex:outputPanel>
+        
+        </apex:pageBlock>
+    </apex:form>
+    
+</apex:page>

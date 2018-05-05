@@ -1,0 +1,82 @@
+<apex:page standardController="xsms__Incoming_SMS_Configuration__c" extensions="xsms.xSMS_IncomingSMSConfigEdit_Controller">
+	<apex:stylesheet value="/sCSS/19.0/sprites/1277316062000/Theme3/default/extended.css" />
+	<div class="blank">&nbsp;</div>
+	<table>
+		<tr>
+			<td>
+				<div class="bPageTitle">
+					<div class="ptBody secondaryPalette">
+						<div class="content">
+							<img src="/s.gif" alt="Create Task Comment" class="pageTitleIcon" title="Incoming SMS Configuration" />
+							<h1 class="pageType">Incoming SMS Configuration Edit<span class="titleSeparatingColon">:</span></h1>
+							<h2 class="pageDescription">Incoming SMS Configuration</h2>
+							<div class="blank">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+			</td>
+			<td>
+				<apex:image id="theImage" value="{!$Resource.xsms__xmsIncomingMessage}" title="Incoming Message details" alt="Incoming Message details."/>
+			</td>
+		</tr>
+	</table>
+	<div class="blank">&nbsp;</div>
+	<!--  
+	<div class="bOverviewSearch">
+		<div class="view">
+			To create workflow based SMS: <BR></BR>
+			1. Select "Related To" object on which you are creating Workflow. <BR></BR>
+			2. Select field on the selected "Related To" object containing mobile
+			numbers to which SMS is to be send. <BR></BR>
+			3. Select SMS Template from available templates OR edit SMS Text to be
+			send under "Message". <BR></BR>
+			4. Copy "Task Comment" and paste against "Description" field while
+			creating workflow task.
+		</div>
+		<div class="messages"></div>
+		
+	 	 <apex:actionFunction immediate="true" name="resetFieldOptions" action="{!resetFieldOptions}" rerender="field" status="fieldStatus">
+		</apex:actionFunction>
+	</div>
+	 -->
+	 
+	 <apex:form > 
+	 	 
+		 <apex:pageBlock title="Incoming SMS Configuration Edit" mode="edit">
+		 	<apex:pageMessages escape="false" />
+		 	<apex:pageBlockButtons >
+		 		<apex:commandButton action="{!save}" value="Save"/>
+		 		<apex:commandButton action="{!saveAndNew}" value="Save and New"/>
+                <apex:commandButton action="{!cancel}" value="Cancel" immediate="true"/>
+		 	</apex:pageBlockButtons> 
+		 	<apex:pageBlockSection columns="1"> 
+		 		<apex:inputField value="{!xsms__Incoming_SMS_Configuration__c.xsms__Keyword__c}" required="true"/>
+		 		<apex:inputField value="{!xsms__Incoming_SMS_Configuration__c.xsms__Option__c}"/>
+		 		<apex:inputField value="{!xsms__Incoming_SMS_Configuration__c.xsms__Who__c}" required="true"/>
+		 		<!--  <apex:pageBlockSectionItem id="relatedToSectionItem"
+					helpText="what to update (Lead/Contact) with incoming message information.">
+					<apex:outputLabel value="Who" for="relatedto" />
+					<apex:outputPanel id="requiredPanelOuter" layout="block" styleClass="requiredInput">
+						<apex:outputPanel id="requiredPanelInner" styleClass="requiredBlock" />
+						<apex:selectList value="{!selectedObject}" multiselect="false" id="relatedto" required="true" size="1" onChange="resetFieldOptions(this)">
+							<apex:selectOptions value="{!objectOptions}" />
+						</apex:selectList>
+					</apex:outputPanel>
+				</apex:pageBlockSectionItem>
+		 		<apex:pageBlockSectionItem helpText="API name of field to whom incoming message to be assigned. Field must belong to either lead or contact.">
+		 			<apex:outputLabel value="Field To Update" for="field"></apex:outputLabel>
+		 			<apex:outputPanel >
+			 			<apex:selectList value="{!Incoming_SMS_Configuration__c.Field_To_Update__c}" multiselect="false" id="field" required="false" size="1">
+							<apex:selectOptions value="{!fieldOptions}" />
+						</apex:selectList>
+						<apex:actionStatus id="fieldStatus"  startText=" (refreshing field options...)" />		
+					</apex:outputPanel>
+		 		</apex:pageBlockSectionItem> -->
+		 		<apex:inputField value="{!xsms__Incoming_SMS_Configuration__c.xsms__Campaign__c}"/>
+		 		<apex:inputField value="{!xsms__Incoming_SMS_Configuration__c.xsms__Is_Case__c}"/>
+		 		<apex:inputField value="{!xsms__Incoming_SMS_Configuration__c.xsms__Description__c}"/>
+		 	</apex:pageBlockSection>	
+		 </apex:pageBlock>
+		 <c:xSMS_Footer ></c:xSMS_Footer>
+	</apex:form>
+</apex:page>

@@ -1,0 +1,7 @@
+Hello ,
+
+New Opportunity is Created from {!Opportunity.Account} with an {!Opportunity.Amount} , Which is due on {!Opportunity.CloseDate}.
+
+All the best ,
+
+Thank you.

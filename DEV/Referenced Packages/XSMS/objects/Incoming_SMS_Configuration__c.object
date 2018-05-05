@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <content>xSMS_IncomingSMSConfigEdit</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <content>xSMS_IncomingSMSConfigEdit</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>xSMS_IncomingSMSConfigEdit</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Campaign__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Provide campaign if incoming message is to be associated with campaign members.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide campaign if incoming message is to be associated with campaign members.</inlineHelpText>
+        <label>Campaign</label>
+        <referenceTo>Campaign</referenceTo>
+        <relationshipLabel>Incoming SMS Configuration</relationshipLabel>
+        <relationshipName>Incoming_SMS_Configuration</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Description Information.</inlineHelpText>
+        <label>Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Is_Case__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Check if incoming message is to associated with a case. Please note if no existing case is found then system would automatically create a case and associate message with case else if multiple cases are found then message would be associated to most recent case.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check if incoming message is to associated with a case.If no existing case is found then system would automatically create a case and associate message with case else if multiple cases are found then message would be associated to most recent case.</inlineHelpText>
+        <label>Is Case</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Keyword__c</fullName>
+        <deprecated>false</deprecated>
+        <description>predefined keyword for incoming message</description>
+        <externalId>false</externalId>
+        <inlineHelpText>predefined keyword for incoming message</inlineHelpText>
+        <label>Keyword</label>
+        <length>200</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Option__c</fullName>
+        <deprecated>false</deprecated>
+        <description>&quot;Option&quot; to identify association of this message</description>
+        <externalId>false</externalId>
+        <inlineHelpText>&quot;Option&quot; to identify association of this message</inlineHelpText>
+        <label>Option</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Who__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Identify what to update (Lead/Contact) with incoming message information</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Identify what to update (Lead/Contact) with incoming message information</inlineHelpText>
+        <label>Who</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Lead</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>Contact</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Incoming SMS Configuration</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Keyword__c</columns>
+        <columns>Option__c</columns>
+        <columns>Who__c</columns>
+        <columns>Campaign__c</columns>
+        <columns>Is_Case__c</columns>
+        <columns>Description__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>X-{0000}</displayFormat>
+        <label>Incoming SMS Configuration Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Incoming SMS Configuration</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Incoming_Configuration_for_Case</fullName>
+        <active>true</active>
+        <description>If &quot;Is Case&quot; is selected then Campaign should be null.</description>
+        <errorConditionFormula>IF(
+         AND(
+                   Is_Case__c == true,
+                    Campaign__c != null
+                ),
+          true,
+          false
+)</errorConditionFormula>
+        <errorDisplayField>Campaign__c</errorDisplayField>
+        <errorMessage>If Incoming SMS is related to Case then Campaign must not be selected.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Incoming_Configuration_for_Case_Who</fullName>
+        <active>true</active>
+        <description>If &quot;Is Case&quot; is selected then &quot;Who&quot; must be selected as &quot;Contact&quot;</description>
+        <errorConditionFormula>IF(
+         AND(
+                   Is_Case__c == true,
+                   TEXT(Who__c) != &apos;Contact&apos;
+                ),
+          true,
+          false
+)</errorConditionFormula>
+        <errorDisplayField>Who__c</errorDisplayField>
+        <errorMessage>If Incoming SMS is related to Case then Who must be selected as Contact.</errorMessage>
+    </validationRules>
+</CustomObject>

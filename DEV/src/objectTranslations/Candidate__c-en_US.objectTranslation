@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Candidate</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Candidate</value>
+    </caseValues>
+    <fields>
+        <label><!-- City/town --></label>
+        <name>City_town__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ethnicity --></label>
+        <name>Ethnicity__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation><!-- Female --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation><!-- Male --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Prefix --></label>
+        <name>Prefix__c</name>
+        <picklistValues>
+            <masterLabel>Mr</masterLabel>
+            <translation><!-- Mr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mrs</masterLabel>
+            <translation><!-- Mrs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ms</masterLabel>
+            <translation><!-- Ms --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Request --></label>
+        <name>Resource_Request__c</name>
+        <relationshipLabel><!-- Candidate --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer Accepted</masterLabel>
+            <translation><!-- Offer Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer Rejected</masterLabel>
+            <translation><!-- Offer Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer Sent</masterLabel>
+            <translation><!-- Offer Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Selected</masterLabel>
+            <translation><!-- Selected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Street address --></label>
+        <name>Street_address__c</name>
+    </fields>
+    <fields>
+        <label><!-- avaiable on weekends --></label>
+        <name>avaiable_on_weekends__c</name>
+    </fields>
+    <fields>
+        <label><!-- candidate Id --></label>
+        <name>candidate_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- country --></label>
+        <name>country__c</name>
+        <picklistValues>
+            <masterLabel>India</masterLabel>
+            <translation><!-- India --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japan</masterLabel>
+            <translation><!-- Japan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UK</masterLabel>
+            <translation><!-- UK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US</masterLabel>
+            <translation><!-- US --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- desired salary --></label>
+        <name>desired_salary__c</name>
+    </fields>
+    <fields>
+        <label><!-- earliest start date --></label>
+        <name>earliest_start_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- language spoken --></label>
+        <name>language_spoken__c</name>
+    </fields>
+    <fields>
+        <label><!-- laptop details --></label>
+        <name>laptop_details__c</name>
+    </fields>
+    <fields>
+        <label><!-- laptop required --></label>
+        <name>laptop_required__c</name>
+    </fields>
+    <fields>
+        <label><!-- last Name --></label>
+        <name>last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- past company info --></label>
+        <name>past_company_info__c</name>
+    </fields>
+    <fields>
+        <label><!-- past exp --></label>
+        <name>past_exp__c</name>
+    </fields>
+    <fields>
+        <label><!-- phone --></label>
+        <name>phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- postal/zip code --></label>
+        <name>postal_zip_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- relocate --></label>
+        <name>relocate__c</name>
+    </fields>
+    <fields>
+        <label><!-- resume --></label>
+        <name>resume__c</name>
+    </fields>
+    <fields>
+        <label><!-- start location --></label>
+        <name>start_location__c</name>
+    </fields>
+    <fields>
+        <label><!-- state --></label>
+        <name>state__c</name>
+        <picklistValues>
+            <masterLabel>AP</masterLabel>
+            <translation><!-- AP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Birmingham</masterLabel>
+            <translation><!-- Birmingham --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East Sussex</masterLabel>
+            <translation><!-- East Sussex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ex</masterLabel>
+            <translation><!-- Ex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ex1</masterLabel>
+            <translation><!-- Ex1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ex2</masterLabel>
+            <translation><!-- Ex2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KA</masterLabel>
+            <translation><!-- KA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>London</masterLabel>
+            <translation><!-- London --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NewYork</masterLabel>
+            <translation><!-- NewYork --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wayne</masterLabel>
+            <translation><!-- Wayne --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

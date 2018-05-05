@@ -1,0 +1,53 @@
+<apex:page standardController="Document_Folder__c" extensions="DocUpload" id="mainpage">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$('#publisherAttachContentPost').trigger('click');
+
+$('#chatterUploadFileAction').trigger('click');
+
+$('.uploadFileSizeLimit').hide();           
+
+$('.contentPublisherSlideDown.customPanel.alignTop').css('border', '0');
+
+$('.clearContentPanelButtonContainer').hide();
+
+$('.publisherFeedItemTypeChoices').hide();      
+
+$('.cxfeedinnerwrapper').hide();  
+
+$('.publisherBottomBarPlaceholder').hide();
+$('.publisherTextAreaPlaceholder.alignCenter').remove();
+$('.publisherTextAreaPlaceholder.alignTop').remove();
+
+});
+
+function uploadFile(){
+    if($('.file')[1].files.length > 0){
+  
+        var ext = $('#chatterFile').val().split('.').pop().toLowerCase();
+                if($.inArray(ext, ['doc','png','pdf','jpg']) < 0) {
+                    alert('invalid extension!');
+                }else{
+                     $('#publishersharebutton').trigger('click');
+                    // $(location).attr('href', '/{!accid}')
+                }   
+                  
+       
+}else{
+
+                   alert('Please select a file');
+
+}            
+}
+     
+</script>
+     <div  >
+   <chatter:feed entityId="{!ssa.id}"/>
+     <center><input type="button" value="upload" onclick="uploadFile()" /></center>
+    </div>
+    <apex:form >
+      <!-- <center> <apex:commandButton value="upload" onclick="uploadFile()" /></center>-->
+    </apex:form>
+</apex:page>

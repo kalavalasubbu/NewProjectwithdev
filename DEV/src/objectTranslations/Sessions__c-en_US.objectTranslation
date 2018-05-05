@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Session</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sessions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the level of Topic --></help>
+        <label><!-- Level --></label>
+        <name>Level__c</name>
+        <picklistValues>
+            <masterLabel>Advanced</masterLabel>
+            <translation><!-- Advanced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beginner</masterLabel>
+            <translation><!-- Beginner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intermediate</masterLabel>
+            <translation><!-- Intermediate --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Session date --></label>
+        <name>Session_date__c</name>
+    </fields>
+    <layouts>
+        <layout>Session Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Get_Sessions_and_speakers --></label>
+        <name>Get_Sessions_and_speakers</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,20 @@
+<apex:page standardcontroller="Account">
+    <apex:form >
+    <apex:pageblock title="Hello ">
+       We are Viewing the contacts for this <b>{!account.Name}</b>
+    </apex:pageblock>
+        <apex:pageblock title="contacts">
+        
+            <apex:pageblocktable value="{!account.contacts}" var="con">
+                <apex:column value="{!con.Name}" />
+                <apex:column value="{!con.Phone}" />
+                <apex:column value="{!con.Title}" />
+                <apex:column value="{!con.LastName}" />   
+            </apex:pageblocktable>
+        </apex:pageblock>
+        
+        
+    </apex:form>
+    
+    
+</apex:page>

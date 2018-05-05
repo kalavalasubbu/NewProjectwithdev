@@ -1,0 +1,29 @@
+<apex:page standardcontroller="Opportunity" showChat="true" sidebar="true" showHeader="true"  >
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageblockbuttons >
+                <apex:commandbutton value="Save the Opportunity" action="{!save}" />  
+            </apex:pageblockbuttons>
+            <apex:pageblocksection title="Opportunity Mandatory values" columns="2" collapsible="false">
+            
+                <apex:inputfield value="{!Opportunity.Name}"/>
+                 <apex:inputfield value="{!Opportunity.CloseDate}"/>
+                 <apex:inputfield value="{!Opportunity.StageName}"/>
+                 <apex:inputfield value="{!Opportunity.Description}"/>              
+            
+            </apex:pageblocksection>
+            
+            <apex:pageblocksection title="Opportuniy information">
+                  
+                 <apex:inputfield value="{!Opportunity.Company_Profit__c}"/> 
+                <apex:inputfield value="{!Opportunity.CurrentGenerators__c}"/> 
+                <apex:inputfield value="{!Opportunity.OrderNumber__c}"/> 
+            </apex:pageblocksection>         
+        
+        
+        
+        </apex:pageBlock>
+    
+    </apex:form>     
+    
+</apex:page>

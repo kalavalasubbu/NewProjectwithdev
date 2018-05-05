@@ -1,0 +1,5 @@
+<apex:page controller="xsms.xSMSSitePage_Controller" action="{!handleIncomingSMS}" showheader="false" sidebar="false" standardStylesheets="false">
+  <!-- Begin Default Content REMOVE THIS -->
+      This page should never be displayed on live site. It is developed to handle incoming SMS.
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

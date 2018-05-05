@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <frameHeight>700</frameHeight>
+    <hasSidebar>true</hasSidebar>
+    <label>xSMS Account</label>
+    <mobileReady>false</mobileReady>
+    <motif>Custom16: Bank</motif>
+    <url>https://xarlesys.secure.force.com/xsms/xSMSMyAccount?org_id={!Organization.Id}</url>
+    <urlEncodingKey>UTF-8</urlEncodingKey>
+</CustomTab>

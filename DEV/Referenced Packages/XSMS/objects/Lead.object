@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Clean_Mobile_Phone__c</fullName>
+        <deprecated>false</deprecated>
+        <description>xSMS : cleaned mobile number for xSMS</description>
+        <externalId>false</externalId>
+        <formula>Mobile_Phone_Country_Code__c +&apos;-&apos;+TRIM ( SUBSTITUTE( 
+SUBSTITUTE( 
+SUBSTITUTE( 
+SUBSTITUTE(SUBSTITUTE(IF(BEGINS(MobilePhone,&apos;0&apos;),RIGHT(MobilePhone, LEN(MobilePhone)-1),MobilePhone),&apos; &apos;,&apos;&apos;),&apos;-&apos;,&apos;&apos;), 
+&apos;+&apos;,&apos;&apos; 
+), 
+&apos;(&apos;,&apos;&apos; 
+) 
+,&apos;)&apos;,&apos;&apos; 
+) 
+)</formula>
+        <inlineHelpText>xSMS : cleaned mobile number for xSMS</inlineHelpText>
+        <label>Clean Mobile Phone</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inbound_MobilePhone_Format__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Mobile_Phone_Country_Code__c+TRIM ( SUBSTITUTE( 
+				SUBSTITUTE( 
+				SUBSTITUTE( 
+				SUBSTITUTE(SUBSTITUTE(MobilePhone,&apos; &apos;,&apos;&apos;),&apos;-&apos;,&apos;&apos;), 
+				&apos;+&apos;,&apos;&apos; 
+				), 
+				&apos;(&apos;,&apos;&apos; 
+				) 
+				,&apos;)&apos;,&apos;&apos; 
+				) 
+				)</formula>
+        <label>Inbound MobilePhone Format</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_SMS_received__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Details of last received SMS</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Details of last received SMS</inlineHelpText>
+        <label>Last SMS received</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Mobile_Phone_Country_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <description>country isd code.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>country isd code.</inlineHelpText>
+        <label>Mobile Phone Country Code</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mobile_Phone_Country__c</fullName>
+        <deprecated>false</deprecated>
+        <description>select country for provided mobile phone for sending SMS</description>
+        <externalId>false</externalId>
+        <inlineHelpText>select country for provided mobile phone for sending SMS</inlineHelpText>
+        <label>Mobile Phone Country</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Afghanistan</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Albania</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Algeria</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>American Samoa</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Andorra/Vatican City</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Angola</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Antarctica/Norfolk Island</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Argentina</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Armenia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Aruba</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ascension Island</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Australia/Christmas Island/Cocos-Keeling Islands</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Austria</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Azerbaijan</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bahrain</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bangladesh</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Belarus</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Belgium</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Belize</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Benin</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bhutan</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bolivia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bosnia &amp; Herzogovina</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Botswana</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Brazil</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Brunei</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bulgaria</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Burkina Faso</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Burma (Myanmar)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Burundi</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cambodia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cameroon</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cape Verde Islands</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Central African Republic</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Chad</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Chile/Easter Island</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>China (PRC)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Colombia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Comoros/Mayotte Island</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Congo</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Congo, Dem. Rep. of (former Zaire)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cook Islands</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Costa Rica</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Croatia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cuba</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Cyprus</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Czech Republic</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Denmark</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Diego Garcia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Djibouti</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ecuador</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Egypt</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>El Salvador</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Equatorial Guinea</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Eritrea</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Estonia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ethiopia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Faeroe Islands</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Falkland Islands</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fiji Islands</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Finland</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>France</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>French Guiana</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>French Polynesia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Gabon</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Gambia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Georgia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Germany</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ghana</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Gibraltar</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Greece</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Greenland</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Guadeloupe</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Guam</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Guatemala</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Guinea (PRP)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Guinea-Bissau</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Guyana</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Haiti</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Honduras</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hong Kong</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Hungary</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Iceland</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>India</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Indonesia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Iran</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Iraq</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ireland</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Israel</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Italy</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ivory Coast (Côte d\&apos;Ivoire)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Japan</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Jordan</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Kenya</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Kiribati</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Kuwait</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Kyrgyz Republic</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Laos</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Latvia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lebanon</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lesotho</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Liberia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Libya</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lithuania</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Luxembourg</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Macau</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Macedonia (former Yugoslav Rep.)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Madagascar</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Malawi</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Malaysia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Maldives</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mali Republic</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Malta</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Marshall Islands</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Martinique/French Antilles</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mauritania</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mauritius</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mexico</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Micronesia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Moldova</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Monaco</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mongolia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Morocco</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mozambique</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Namibia/Anguilla</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Nauru</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Nepal</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Netherlands</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Netherlands Antilles</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>New Caledonia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>New Zealand/Chatham Island (New Zealand)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Nicaragua</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Niger</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Nigeria</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Niue</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>North Korea</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Norway</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Oman</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Pakistan</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Palau</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Panama</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Papua New Guinea</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Paraguay</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Peru</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Philippines</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Poland</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Portugal</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Qatar</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Réunion Island</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Romania</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rota Island/Tinian Island/Saipan Island</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Russia/Tajikistan/Kazakhstan</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Rwanda</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>San Marino</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>São Tomé and Principe</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Saudi Arabia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Senegal</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Seychelles Islands</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sierra Leone</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Singapore</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Slovak Republic</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Slovenia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Solomon Islands</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Somalia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>South Africa</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>South Korea</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Spain</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sri Lanka</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>St. Helena</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>St. Kitts/Nevis</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>St. Pierre &amp; Miquelon</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sudan</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Suriname</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Swaziland/Barbuda/Antigua</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Sweden</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Switzerland/Liechtenstein</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Syria</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Taiwan</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tanzania</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Thailand</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Togo</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tokelau</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tonga Islands</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tunisia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Turkey</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Turkmenistan</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tuvalu</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Uganda</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Ukraine</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>United Arab Emirates</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>United Kingdom</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>United States of America/Canada/US Virgin Islands</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Uruguay</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Uzbekistan</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Vanuatu</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Venezuela</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Vietnam</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wake Island/Midway Island</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wallis and Futuna Islands</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Western Samoa</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Yemen</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Yugoslavia/Serbia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Zambia</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Zimbabwe</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SMS_Opt_Out__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>No SMS would be send to Lead if SMS Opt Out is marked true.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>No SMS would be send to Lead if SMS Opt Out is marked true.</inlineHelpText>
+        <label>SMS Opt Out</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <webLinks>
+        <fullName>Send_SMS</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send SMS</masterLabel>
+        <openType>sidebar</openType>
+        <page>SendBulkSMSLead</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+</CustomObject>

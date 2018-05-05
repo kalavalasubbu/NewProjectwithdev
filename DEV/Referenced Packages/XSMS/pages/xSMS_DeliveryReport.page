@@ -1,0 +1,2 @@
+<apex:page controller="xsms.xSMS_DeliveryReport_Controller" action="{!updateTaskStatus}" sideBar="false" showHeader="false" standardStylesheets="false">
+</apex:page>
