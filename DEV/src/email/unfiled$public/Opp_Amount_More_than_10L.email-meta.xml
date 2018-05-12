@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
-    <available>true</available>
-    <encodingKey>ISO-8859-1</encodingKey>
-    <name>Opp Amount More than 10L</name>
-    <style>none</style>
-    <subject>New Opportunity {!Opportunity.Name} is created with Amount : {!Opportunity.Amount}</subject>
-    <type>text</type>
-</EmailTemplate>

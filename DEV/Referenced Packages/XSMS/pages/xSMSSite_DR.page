@@ -1,3 +1,0 @@
-<apex:page controller="xsms.xSMSSite_DR" action="{!handleDeliveryReport}" showheader="false" sidebar="false" standardStylesheets="false">
- This page should never be displayed on live site. It is developed to handle real time SMS delivery report.
-</apex:page>
